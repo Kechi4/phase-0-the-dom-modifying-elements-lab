@@ -5,7 +5,11 @@ describe("index.html", () => {
     it("no longer has DOM node 'main#main'", () => {
       expect(document.querySelector('main#main'), "Make sure you remove the <main> with id 'main'").to.not.exist
     });
+    const testVar = {}
 
+    function testFunc() {
+      return "hi"
+    }
     it("has a 'newHeader' variable that points to an <h1> node", () => {
       expect(
         newHeader.nodeName,
